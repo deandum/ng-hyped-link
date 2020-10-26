@@ -41,7 +41,7 @@ Click <ng-hyped-link targetUrl="https://github.com/deandum" target="_blank">here
 ```
 
 
-##Component inputs:
+## Component inputs:
 - `targetUrl`: the URL to redirect to when clicked
 - `target`: the equivalent of a `target` attribute when using the `<a>` tag
 
