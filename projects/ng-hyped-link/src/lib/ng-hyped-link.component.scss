@@ -1,0 +1,53 @@
+/* Styles are based on bootstrap */
+/*
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright (c) 2011-2020 Twitter, Inc.
+ * Copyright (c) 2011-2020 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+*/
+
+.ng_hyped_link__card {
+  position: absolute;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 25rem;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.ng_hyped_link__card-image {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 35%;
+  height: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  border-top-left-radius: calc(0.15rem - 1px);
+  border-top-right-radius: calc(0.15rem - 1px);
+}
+
+.ng_hyped_link__card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1rem;
+}
+
+.ng_hyped_link__card-title {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.ng_hyped_link__card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: auto;
+}
