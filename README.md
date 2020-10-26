@@ -8,7 +8,7 @@ The popup information is generated using the [Open Graph protocol](https://ogp.m
 - `og:image`
 - `og:description`
 
-The tags are retrieved using [jQuery](https://jquery.com/).
+The tags are retrieved using [jQuery](https://jquery.com/) which is a required dependency.
 
 
 ## Example

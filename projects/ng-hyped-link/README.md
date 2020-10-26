@@ -8,11 +8,11 @@ The popup information is generated using the [Open Graph protocol](https://ogp.m
 - `og:image`
 - `og:description`
 
-The tags are retrieved using [jQuery](https://jquery.com/).
+The tags are retrieved using [jQuery](https://jquery.com/) which is a required dependency.
 
 
 ## Example
-![](../../docs/ng-hyped-link-demo.png)
+Please visit [Github](https://github.com/deandum/ng-hyped-link) for an example.
 
 
 ## Installation
