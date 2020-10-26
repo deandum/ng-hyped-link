@@ -12,7 +12,7 @@ The tags are retrieved using [jQuery](https://jquery.com/).
 
 
 ## Example
-![](docs/ng-hyped-link-demo.png)
+![](../../docs/ng-hyped-link-demo.png)
 
 
 ## Installation
