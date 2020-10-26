@@ -1,0 +1,23 @@
+<a id="{{'ng-hyped-' + id}}" href="{{targetUrl}}" target="{{target}}"><ng-content></ng-content></a>
+
+
+<div id="{{'ng-hyped-card-' + id}}" class="ng_hyped_link__card">
+  <div *ngIf="image">
+    <img id="{{'ng-hyped-card-image-' + id}}" src="{{image}}" class="ng_hyped_link__card-image" alt="image">
+  </div>
+
+  <div class="ng_hyped_link__card-body">
+    <div *ngIf="pageTitle">
+      <h5 id="{{'ng-hyped-card-title-' + id}}" class="ng_hyped_link__card-title">
+        {{pageTitle}}
+      </h5>
+    </div>
+
+    <div *ngIf="description">
+      <p id="{{'ng-hyped-card-description-' + id}}" class="ng_hyped_link__card-text">
+        {{description}}
+      </p>
+    </div>
+  </div>
+
+</div>
