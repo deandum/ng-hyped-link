@@ -1,24 +1,50 @@
-# NgHypedLink
+# ng-hyped-link
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+An Angular library that creates a bootstrap inspired popup card when hovering over a link based on the metadata retrieved from the URL.
 
-## Code scaffolding
+The popup information is generated using the [Open Graph protocol](https://ogp.me/) properties from `<meta>` tags. OG properties used:
+- `og:site_name`
+- `og:title`
+- `og:image`
+- `og:description`
 
-Run `ng generate component component-name --project ng-hyped-link` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-hyped-link`.
-> Note: Don't forget to add `--project ng-hyped-link` or else it will be added to the default project in your `angular.json` file. 
+The tags are retrieved using [jQuery](https://jquery.com/).
 
-## Build
 
-Run `ng build ng-hyped-link` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Example
+![](docs/ng-hyped-link-demo.png)
 
-## Publishing
 
-After building your library with `ng build ng-hyped-link`, go to the dist folder `cd dist/ng-hyped-link` and run `npm publish`.
+## Installation
 
-## Running unit tests
+Using npm:
+```
+npm install ng-hyped-link
+```
 
-Run `ng test ng-hyped-link` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Import the module in your `app.module.ts` file:
+```angular2
+import { NgHypedLinkModule } from 'ng-hyped-link';
+```
 
-## Further help
+```angular2
+@NgModule({
+  imports: [
+    NgHypedLinkModule
+  ],
+})
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Use the component in the template file:
+```angular2html
+Click <ng-hyped-link targetUrl="https://github.com/deandum" target="_blank">here</ng-hyped-link> to see my cool link.
+```
+
+
+## Component inputs:
+- `targetUrl`: the URL to redirect to when clicked
+- `target`: the equivalent of a `target` attribute when using the `<a>` tag
+
+
+## License
+MIT © Dean Dumitru
